@@ -1,4 +1,5 @@
-@import './app/styles/_partial';
+@import 'app/styles/_partial';
+@import 'app/styles/_variables';
 
 html,
 body {
@@ -8,4 +9,8 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  height: calc(100% - #{$header-footer-height});
 }
