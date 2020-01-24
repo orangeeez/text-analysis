@@ -6,10 +6,13 @@
         </mat-card-header>
         <mat-form-field class="full-width">
             <textarea
+                [(ngModel)]="text"
+                (keypress)="onKeypess()"
                 rows="15"
                 matInput
                 placeholder="Paste here"
             ></textarea>
         </mat-form-field>
     </mat-card>
+    <app-metrics [text]="text"></app-metrics>
 </div>
