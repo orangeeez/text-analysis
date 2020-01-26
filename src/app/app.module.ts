@@ -12,11 +12,11 @@ import { MaterialModule } from "./shared/material.module";
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    CoreModule,
-    SharedModule,
-    MaterialModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CoreModule,
+    MaterialModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

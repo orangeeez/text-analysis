@@ -6,9 +6,10 @@ import { MainComponent } from "./main.component";
 import { SharedModule } from "app/shared/shared.module";
 import { MetricsComponent } from "./metrics/metrics.component";
 import { FormsModule } from "@angular/forms";
+import { BasicComponent } from './metrics/basic/basic.component';
 
 @NgModule({
-  declarations: [MainComponent, MetricsComponent],
+  declarations: [MainComponent, MetricsComponent, BasicComponent],
   imports: [CommonModule, MainRoutingModule, SharedModule]
 })
 export class MainModule {}

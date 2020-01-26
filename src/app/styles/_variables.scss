@@ -1,4 +1,5 @@
 $header-height: 56px;
 $footer-height: 45px;
+$container-margins: 40px;
 
-$header-footer-height: $header-height+$footer-height;
+$header-footer-height: $header-height+$footer-height+$container-margins;

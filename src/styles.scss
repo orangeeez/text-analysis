@@ -1,5 +1,5 @@
-@import 'app/styles/_partial';
-@import 'app/styles/_variables';
+@import "app/styles/_partial";
+@import "app/styles/_variables";
 
 html,
 body {
@@ -12,5 +12,7 @@ body {
 }
 
 .container {
+  margin: 20px;
   height: calc(100% - #{$header-footer-height});
+  overflow-y: auto;
 }

@@ -1,1 +1,24 @@
-
+<div
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutGap="20px"
+    fxLayoutAlign="flex-start"
+    class="matric-container"
+>
+    <ng-container *ngFor="let metric of types">
+        <mat-card
+            fxFlex="32"
+            fxFlex.lt-sm="100%"
+        >
+            <mat-card-header>
+                <mat-card-title>{{metric?.title}}</mat-card-title>
+                <mat-card-subtitle>{{metric?.subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <ng-container [ngSwitch]="metric.component">
+                <mat-card-content *ngSwitchCase="'basic'">
+                    <app-basic [text]="text"></app-basic>
+                </mat-card-content>
+            </ng-container>
+        </mat-card>
+    </ng-container>
+</div>
