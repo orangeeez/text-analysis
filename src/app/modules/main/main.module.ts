@@ -7,9 +7,13 @@ import { SharedModule } from "app/shared/shared.module";
 import { MetricsComponent } from "./metrics/metrics.component";
 import { FormsModule } from "@angular/forms";
 import { BasicComponent } from './metrics/basic/basic.component';
+import { CharactersPipe } from './pipes/characters.pipe';
+import { SentencesPipe } from './pipes/sentences.pipe';
+import { WordsPipe } from './pipes/words.pipe';
+import { OccurancesComponent } from './metrics/occurances/occurances.component';
 
 @NgModule({
-  declarations: [MainComponent, MetricsComponent, BasicComponent],
+  declarations: [MainComponent, MetricsComponent, BasicComponent, CharactersPipe, SentencesPipe, WordsPipe, OccurancesComponent],
   imports: [CommonModule, MainRoutingModule, SharedModule]
 })
 export class MainModule {}

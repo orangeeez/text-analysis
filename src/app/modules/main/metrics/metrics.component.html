@@ -18,6 +18,9 @@
                 <mat-card-content *ngSwitchCase="'basic'">
                     <app-basic [text]="text"></app-basic>
                 </mat-card-content>
+                <mat-card-content *ngSwitchCase="'occurances'">
+                    <app-occurances [text]="text"></app-occurances>
+                </mat-card-content>
             </ng-container>
         </mat-card>
     </ng-container>

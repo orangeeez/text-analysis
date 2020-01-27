@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  margin: 20px;
+  padding: 20px;
   height: calc(100% - #{$header-footer-height});
   overflow-y: auto;
 }

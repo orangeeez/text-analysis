@@ -1,5 +1,6 @@
 <mat-list role="list">
-    <mat-list-item role="listitem">Item 1</mat-list-item>
-    <mat-list-item role="listitem">Item 2</mat-list-item>
-    <mat-list-item role="listitem">Item 3</mat-list-item>
+    <mat-list-item role="listitem">Length: {{text?.length || 'empty'}}</mat-list-item>
+    <mat-list-item role="listitem">Characters: {{text | characters}}</mat-list-item>
+    <mat-list-item role="listitem">Sentences: {{text | sentences}}</mat-list-item>
+    <mat-list-item role="listitem">Words: {{text | words}}</mat-list-item>
 </mat-list>

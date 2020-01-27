@@ -8,7 +8,10 @@ import { MetricTypes } from "app/models/metric-types";
   styleUrls: ["./metrics.component.scss"]
 })
 export class MetricsComponent extends Metrics implements OnInit {
-  types: MetricTypes[] = [{ title: "Basic", component: "basic" }];
+  types: MetricTypes[] = [
+    { title: "Basic", subtitle: "Quantity", component: "basic" },
+    { title: "Occurances of", subtitle: "Quantity", component: "occurances" }
+  ];
   constructor() {
     super();
   }

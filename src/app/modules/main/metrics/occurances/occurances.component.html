@@ -1,0 +1,25 @@
+<mat-list role="list">
+    <mat-list-item role="listitem">Most frequent charachter:</mat-list-item>
+    <mat-list-item role="listitem">Most frequent word:</mat-list-item>
+</mat-list>
+<div style="padding: 0 16px;">
+    <mat-form-field>
+        <input
+            [ngModel]="letter"
+            (ngModelChange)="onLetterChange($event)"
+            matInput
+            placeholder="Type letter here"
+            maxlength="1"
+        >
+    </mat-form-field>
+    <span>Letter count: {{letterCount || ""}}</span>
+    <mat-form-field>
+        <input
+            [ngModel]="word"
+            (ngModelChange)="onWordChange($event)"
+            matInput
+            placeholder="Type word here"
+        >
+    </mat-form-field>
+    <span>Word count: {{wordCount || ""}}</span>
+</div>

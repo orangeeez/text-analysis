@@ -11,8 +11,4 @@ export class MainComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  onKeypess() {
-    console.log(this.text);
-  }
 }
