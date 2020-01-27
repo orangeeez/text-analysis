@@ -1,7 +1,8 @@
 <mat-list role="list">
     <mat-list-item role="listitem">Most frequent charachters:</mat-list-item>
-    <div>{{text | mostFrequentChar}}</div>
+    <div class="frequency">{{text | mostFrequentChar}}</div>
     <mat-list-item role="listitem">Most frequent words:</mat-list-item>
+    <div class="frequency">{{text | mostFrequentWord}}</div>
 </mat-list>
 <div style="padding: 0 16px;">
     <mat-form-field>
