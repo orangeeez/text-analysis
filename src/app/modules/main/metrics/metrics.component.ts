@@ -10,7 +10,8 @@ import { MetricTypes } from "app/models/metric-types";
 export class MetricsComponent extends Metrics implements OnInit {
   types: MetricTypes[] = [
     { title: "Basic", subtitle: "Quantity", component: "basic" },
-    { title: "Occurances of", subtitle: "Quantity", component: "occurances" }
+    { title: "Occurances of", subtitle: "Quantity", component: "occurances" },
+    { title: "GrammarBot API", component: "grammar" }
   ];
   constructor() {
     super();

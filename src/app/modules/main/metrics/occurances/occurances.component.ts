@@ -25,7 +25,7 @@ export class OccurancesComponent extends Metric implements OnInit {
   }
 
   onWordChange(word: string) {
-    word.length !== 1
+    word.length !== 0
       ? (this.wordCount = this.text.match(new RegExp(word, "g")).length)
       : (this.wordCount = undefined);
   }
