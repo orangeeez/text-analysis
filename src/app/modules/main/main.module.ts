@@ -11,9 +11,10 @@ import { CharactersPipe } from './pipes/characters.pipe';
 import { SentencesPipe } from './pipes/sentences.pipe';
 import { WordsPipe } from './pipes/words.pipe';
 import { OccurancesComponent } from './metrics/occurances/occurances.component';
+import { MostFrequentCharPipe } from './pipes/most-frequent-char.pipe';
 
 @NgModule({
-  declarations: [MainComponent, MetricsComponent, BasicComponent, CharactersPipe, SentencesPipe, WordsPipe, OccurancesComponent],
+  declarations: [MainComponent, MetricsComponent, BasicComponent, CharactersPipe, SentencesPipe, WordsPipe, OccurancesComponent, MostFrequentCharPipe],
   imports: [CommonModule, MainRoutingModule, SharedModule]
 })
 export class MainModule {}
